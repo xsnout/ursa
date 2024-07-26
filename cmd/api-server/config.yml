@@ -1,0 +1,11 @@
+database:
+  url: "mongodb://localhost:27017"
+  dbname: "ursadb"
+  collection: "applications"
+
+server:
+  port: "9001"
+
+app:
+  name: "ursa"
+  timeout: 3000

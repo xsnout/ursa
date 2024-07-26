@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  ursa:
+    build:
+      context: .
+      dockerfile: ./dockerfile-ursa
+    container_name: ursa-ursa
+    ports:
+      - 50001-50099:50001-50099
+    restart: on-failure
+    env_file:
+      - .env
